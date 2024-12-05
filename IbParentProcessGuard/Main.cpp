@@ -3,6 +3,7 @@
 #include <Windows.h>
 #include <winternl.h>
 #include <psapi.h>
+#include <memory>
 #include "IbWinCppLib/WinCppLib.hpp"
 
 #pragma comment(lib, "ntdll.lib")
