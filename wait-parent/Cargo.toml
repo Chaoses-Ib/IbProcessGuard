@@ -1,0 +1,13 @@
+[package]
+name = "wait-parent"
+version = "0.1.0"
+edition = "2021"
+description = "Wait for the parent process to exit"
+keywords = ["process", "wait", "parent"]
+homepage = "https://github.com/Chaoses-Ib/IbProcessGuard"
+repository = "https://github.com/Chaoses-Ib/IbProcessGuard"
+authors = ["Chaoses-Ib"]
+license = "MIT"
+
+[dependencies]
+sysinfo = { git = "https://github.com/GuillaumeGomez/sysinfo", rev = "b4a2cf00f7e241efd0bfe4c891514a161b3b68da", version = "0.33.0", default-features = false, features = ["system"]}
