@@ -60,8 +60,8 @@ dependencies = [
 
 [[package]]
 name = "sysinfo"
-version = "0.33.0"
-source = "git+https://github.com/GuillaumeGomez/sysinfo?rev=b4a2cf00f7e241efd0bfe4c891514a161b3b68da#b4a2cf00f7e241efd0bfe4c891514a161b3b68da"
+version = "0.33.1"
+source = "git+https://github.com/GuillaumeGomez/sysinfo?rev=c491e0a23509ecfacd228352698d25b73d75342f#c491e0a23509ecfacd228352698d25b73d75342f"
 dependencies = [
  "core-foundation-sys",
  "libc",
