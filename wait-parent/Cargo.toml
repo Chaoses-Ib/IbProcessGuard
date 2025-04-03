@@ -10,4 +10,4 @@ authors = ["Chaoses-Ib"]
 license = "MIT"
 
 [dependencies]
-sysinfo = { git = "https://github.com/GuillaumeGomez/sysinfo", rev = "c491e0a23509ecfacd228352698d25b73d75342f", version = "0.33.1", default-features = false, features = ["system"]}
+sysinfo = { version = "0.34", default-features = false, features = ["system"]}
