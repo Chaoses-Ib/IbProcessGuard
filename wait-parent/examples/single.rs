@@ -12,7 +12,7 @@ fn main() {
             const STATUS_CONTROL_C_EXIT: i32 = 0xC000013Au32 as i32;
             match status.and_then(|s| s.code()) {
                 Some(0 | STATUS_CONTROL_C_EXIT) => (),
-                Some(_) => {
+                Some(_) | None => {
                     // std::process::Command::new(std::env::current_exe().unwrap())
                     //     .spawn()
                     //     .unwrap();
@@ -20,7 +20,6 @@ fn main() {
                     std::thread::sleep(std::time::Duration::from_secs(5));
                     println!("Child exiting...");
                 }
-                None => (),
             }
         }
         Some(_) => unreachable!(),

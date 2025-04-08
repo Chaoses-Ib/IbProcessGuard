@@ -16,6 +16,10 @@ macro_rules! sysinfo_debug {
     ($($x:tt)*) => {{}};
 }
 
+/// Wait for the parent process to exit.
+///
+/// ## Returns
+/// - `None` if the parent process has already exited
 pub fn wait_parent() -> Option<ExitStatus> {
     let mut system = sysinfo::System::new();
     let current_pid = sysinfo::get_current_pid().unwrap();
